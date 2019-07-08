@@ -1,0 +1,62 @@
+/**
+ * Black theme for reveal.js. This is the opposite of the 'white' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/cordel-encatado/stylesheet.css);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #f8e598;
+
+$mainColor: #817d77;
+$headingColor: #817d77;
+
+$mainFontSize: 42px;
+$mainFont: 'Cordel Encarnado II',
+'Source Sans Pro',
+Helvetica,
+sans-serif;
+$headingFont: 'Cordel Encarnado II',
+'Source Sans Pro',
+Helvetica,
+sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 400;
+$linkColor: #c93e4c;
+$linkColorHover: lighten($linkColor, 15%);
+$selectionBackgroundColor: lighten($linkColor, 25%);
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-light-background {
+
+	&,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: #817d77;
+	}
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
