@@ -275,6 +275,16 @@ body {
   .backgrounds {
     background-color: #222; } }
 
+/*********************************************
+ * Background 
+ *********************************************/
+.has-background-image {
+  background: url("") no-repeat center center fixed;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain; }
+
 .reveal p {
   font-weight: 300;
   text-shadow: 1px 1px #222; }

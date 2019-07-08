@@ -1,104 +1,128 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
 
-    <title>reveal.js</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/reveal.css" />
-    <link rel="stylesheet" href="css/grid.css" />
-    <link rel="stylesheet" href="css/theme/cordel.css" />
+  <title>reveal.js</title>
 
-    <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="lib/css/monokai.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/reveal.css" />
+  <link rel="stylesheet" href="css/theme/cordel.css" />
 
-    <!-- Printing and PDF exports -->
-    <script>
-      var link = document.createElement('link');
-      link.rel = 'stylesheet';
-      link.type = 'text/css';
-      link.href = window.location.search.match(/print-pdf/gi)
-        ? 'css/print/pdf.css'
-        : 'css/print/paper.css';
-      document.getElementsByTagName('head')[0].appendChild(link);
-    </script>
-  </head>
-  <body>
-    <div class="reveal">
-      <div class="slides">
-        <section>
-          <h3>Gerenciamento de estados arrochado</h3>
-          <h5>Com Vuex</h5>
-        </section>
-        <section>
-          <h3>Quem sou eu?</h3>
-          <div class="container">
-            <div class="row">
-              <div class="column">
-                Desenvolvedor Nordestino Front-End
-              </div>
-              <div class="column">
-                <img
-                  src="https://media.licdn.com/dms/image/C4E03AQFtP-9Tn3FYCQ/profile-displayphoto-shrink_200_200/0?e=1568246400&v=beta&t=rYpMcixCwuXCeUEJ6bMcjl28R0DaawAvpzfZKXUamIA"
-                  alt=""
-                />
-              </div>
-            </div>
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/monokai.css" />
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ?
+      'css/print/pdf.css' :
+      'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+<body>
+  <div class="reveal has-background-image">
+    <div class="slides">
+      <section>
+        <h3>Gerenciamento de estados arrochado</h3>
+        <h5>Com Vuex</h5>
+      </section>
+      <section>
+        <h3>Quem sou eu?</h3>
+        <div class="columns">
+          <div class="column">
+            Desenvolvedor Nordestino Front-End
           </div>
-        </section>
-        <section>
-          <h3>Gerenciamento de estado ?</h3>
-          <div class="container">
-            <div class="row">
-              <div class="column">
-                <p>
-                  <span class="fragment">Olha só esse cenário</span>
-                  <img
-                    class="fragment"
-                    src="images/vuex-1.png"
-                    alt=""
-                    height="500"
-                  />
-                </p>
-              </div>
-              <div class="column"></div>
-            </div>
+          <div class="column">
+            <img
+              src="https://media.licdn.com/dms/image/C4E03AQFtP-9Tn3FYCQ/profile-displayphoto-shrink_200_200/0?e=1568246400&v=beta&t=rYpMcixCwuXCeUEJ6bMcjl28R0DaawAvpzfZKXUamIA"
+              alt="" />
           </div>
-        </section>
-      </div>
+        </div>
+
+      </section>
+      <section>
+        <h3>Revisando componentes</h3>
+        <div class="columns">
+          <div class="column fragment">
+            <span>Normal</span>
+            <img src="images/component-1.PNG">
+          </div>
+          <div class="column fragment">
+            <span>Encaixando</span>
+            <img src="images/component-2.PNG">
+          </div>
+          <div class="column fragment">
+            <span>Encaixado</span>
+            <img src="images/component-3.PNG">
+          </div>
+          <div class="column  fragment">
+            <span>Um dentro</span>
+            <img src="images/component-4.PNG">
+          </div>
+          <div class="column fragment">
+            <span>Dois dentro</span>
+            <img src="images/component-5.PNG">
+          </div>
+        </div>
+      </section>
+      <section>
+        <h3>Gerenciamento de estado ?</h3>
+        <div class="columns ">
+          <div class="column">
+            <p>
+              <span class="fragment">Olha só esse cenário</span>
+              <img class="fragment" src="images/vuex-1.png" alt="" height="500" />
+            </p>
+          </div>
+          <div class="column">
+            <p>
+              <span class="fragment">E a comunicação?</span>
+              <img src="images/vuex-2.png" alt="" class="fragment" height="500">
+            </p>
+          </div>
+        </div>
+      </section>
+
     </div>
+  </div>
 
-    <script src="js/reveal.js"></script>
+  <script src="js/reveal.js"></script>
 
-    <script>
-      // More info about config & dependencies:
-      // - https://github.com/hakimel/reveal.js#configuration
-      // - https://github.com/hakimel/reveal.js#dependencies
-      Reveal.initialize({
-        controlsTutorial: false,
-        hash: true,
-        showNotes: true,
-        width: 1080,
-        height: 700,
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      controlsTutorial: false,
+      hash: true,
+      showNotes: true,
+      width: 1080,
+      height: 700,
 
-        // Factor of the display size that should remain empty around the content
-        margin: 0.1,
+      dependencies: [{
+          src: 'plugin/markdown/marked.js'
+        },
+        {
+          src: 'plugin/markdown/markdown.js'
+        },
+        {
+          src: 'plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: 'plugin/highlight/highlight.js',
+          async: true
+        }
+      ]
+    });
+  </script>
+</body>
 
-        // Bounds for smallest/largest possible scale to apply to content
-        minScale: 0.2,
-        maxScale: 1.5,
-        dependencies: [
-          { src: 'plugin/markdown/marked.js' },
-          { src: 'plugin/markdown/markdown.js' },
-          { src: 'plugin/notes/notes.js', async: true },
-          { src: 'plugin/highlight/highlight.js', async: true }
-        ]
-      });
-    </script>
-  </body>
 </html>
